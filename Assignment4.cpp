@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-class Book {
+class Book 
+{
 private:
     string title;
     string author;
@@ -9,27 +10,32 @@ private:
 
 public:
    
-    Book() {
+    Book() 
+   {
         title = "Unknown";
         author = "Unknown";
         price = 0.0;
     }
 
    
-    Book(string t, string a, float p) {
-        title = t;
-        author = a;
-        price = p;
+    Book(string a, string b, float c) 
+   {
+    
+        title = a;
+        author = b;
+        price = c;
     }
 
-    void display() {
+    void display() 
+   {
         cout << "Title: " << title << endl;
         cout << "Author: " << author << endl;
         cout << "Price: $ " << price << endl;
     }
 };
 
-int main() {
+int main() 
+{
     
     Book book1;
 
