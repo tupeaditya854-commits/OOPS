@@ -1,22 +1,25 @@
 #include <iostream>
 using namespace std;
 
-class Book {
+class Book 
+{
 public:
     string title;
     string author;
     float price;
     int bookid;
 
-    void display() {
+    void display() 
+   {
         cout << "Title: " << title << endl;
         cout << "Author: " << author << endl;
-        cout << "Price: " << price << endl;
+        cout << "Price: $ " << price << endl;
         cout << "Book ID: " << bookid << endl;
     }
 };
 
-int main() {
+int main() 
+{
     Book book1, book2;
 
     cout << "Enter details for Book 1:\n";
